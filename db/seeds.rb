@@ -7,7 +7,6 @@ user_serialized = URI.open(url).read
 JSON.parse(user_serialized)["results"].each do |user|
 
   Movie.create(title: "#{user['original_title']}", overview: "#{user['overview']}", poster_url: "#{user['poster_path']}", rating: "#{user['vote_average']}")
-
 end
 
 # This file should contain all the record creation needed to seed the database with its default values.
