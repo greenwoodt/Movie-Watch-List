@@ -25,4 +25,5 @@
             <%= bookmark.comment %></small>
 
              <%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-danger' %>
+
     <% end %>
