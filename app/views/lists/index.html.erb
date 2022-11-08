@@ -1,7 +1,12 @@
-<h1>My Lists</h1>
-
-<ul>
-  <% @lists.each do |list| %>
-    <li><%=link_to list.name, list_path(list)%></li>
-  <% end %>
-</ul>
+<div class="lists-container">
+  <div class="header-lists">
+    <h1>My Lists</h1>
+  </div>
+  <div class="create-list-class">
+    <%= link_to "Create a movie list", new_list_path, class: "btn btn-flat" %>
+    <br>
+      <% @lists.each do |list| %>
+        <%=link_to list.name, list_path(list)%>
+      <% end %>
+  </div>
+</div>
