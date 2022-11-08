@@ -6,9 +6,9 @@ Movie.destroy_all
 puts "The database is now cleaned!"
 
 url = "https://tmdb.lewagon.com/movie/top_rated"
-10.times do |x|
+1.times do |x|
   puts "Importing movies from page #{x + 1}"
-user_serialized = URI.open("#{url}?page=#{i + 1}").read
+user_serialized = URI.open("#{url}?page=#{x + 1}").read
 JSON.parse(user_serialized)["results"].each do |movie|
   puts "Creating #{movie['title']}"
   Movie.create(title: "#{movie['original_title']}",
@@ -17,6 +17,7 @@ JSON.parse(user_serialized)["results"].each do |movie|
     rating: "#{movie['vote_average']}")
   end
 end
+
 
 # url = "http://tmdb.lewagon.com/movie/top_rated"
 # 10.times do |i|
@@ -33,7 +34,7 @@ end
 #     )
 #   end
 # end
-puts "Movies created"
+puts "Your Movies created!!"
 
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
