@@ -4,6 +4,7 @@ align-items: center;
 margin: auto 0;
 height: 1px 0px 1px 0px;
 width: 1px 0px 1px 0px;
+flex-direction: column;
 
 }
 
@@ -13,5 +14,9 @@ width: 1px 0px 1px 0px;
 }
 
 .bookmarks-title-show {
+display: flex;
+}
+
+.bookmark-list-card {
 display: flex;
 }
