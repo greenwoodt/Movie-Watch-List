@@ -1,6 +1,11 @@
-<div>
-<h2>Your bookmarks</h2>
-<h1><%= @list.name %></h1>
+<div class="container-list-show">
+  <div class="header-list-title">
+  <h1><%= @list.name %></h1>
+  </div>
+  <div class="bookmarks-title-show">
+    <h2>Your bookmarks</h2>
+  </div>
+
 <ul>
   <% @list.bookmarks.each do |bookmark| %>
     <li>
