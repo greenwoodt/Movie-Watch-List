@@ -1,6 +1,6 @@
-<h1><%= @list.name %></h1>
+<div>
 <h2>Your bookmarks</h2>
-
+<h1><%= @list.name %></h1>
 <ul>
   <% @list.bookmarks.each do |bookmark| %>
     <li>
@@ -24,3 +24,4 @@
           <%= bookmark.comment %></small>
              <%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-danger' %>
     <% end %>
+</div>
