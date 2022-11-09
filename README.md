@@ -1,24 +1,4 @@
-# README
+# MOVIE-WATCH-LIST
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is currently being built on rails 7. It a simple application that allow you to bookmark your favourite movies!
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
