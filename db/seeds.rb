@@ -24,7 +24,6 @@ JSON.parse(user_serialized)["results"].each do |movie|
     poster_url: "#{base_poster_url}#{movie['backdrop_path']}",
     rating: "#{movie['vote_average']}")
   end
-
 end
 puts "Your Movies have been created!!"
 
