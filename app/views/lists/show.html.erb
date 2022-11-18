@@ -1,5 +1,13 @@
-<h1><%= @list.name %></h1>
-<h2>Your bookmarks</h2>
+<div class="header-list-title">
+  <h1><%= @list.name %></h1>
+  </div>
+
+<div class="container-list-show">
+  <div class="bookmarks-title-show">
+    <h2>Your bookmarks</h2>
+  </div>
+<%= link_to "Add bookmark", new_list_bookmark_path(@list) %>
+<%= link_to "See all lists", lists_path %>
 
 <ul>
   <% @list.bookmarks.each do |bookmark| %>
@@ -12,17 +20,13 @@
   <% end %>
 </ul>
 
-<%= link_to "Add bookmark", new_list_bookmark_path(@list) %>
-<%= link_to "See all lists", lists_path %>
-
-
  <% @list.movies.each do |movie| %>
       <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
           <%= image_tag movie.poster_url, alt: movie.title%>
           <%= movie.title %> <%= movie.rating %>
           <%= movie.overview %>
           <%= bookmark.comment %></small>
-             <%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-danger' %>
+          <%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-danger' %>
     <% end %>
 <br>
  <div class="col-12 col-sm-6">
@@ -56,3 +60,4 @@
     </div>
   </div>
   <%# <%= render "bookmarks/modal", list: @list, bookmark: @bookmark %> %>
+</div>
