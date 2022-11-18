@@ -1,4 +1,9 @@
 class ReviewsController < ApplicationController
+  # def new
+  #   @list = List.find(params[:list_id])
+  #   @review = Review.new
+  # end
+
   def create
     @review = Review.new(review_params)
     @list = List.find(params[:list_id])
@@ -6,7 +11,7 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to list_path(@list)
     else
-      @bookmark = Bookmark.new
+      # @bookmark = Bookmark.new
       render "lists/show", status: :unprocessable_entity
     end
   end
@@ -20,6 +25,6 @@ class ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:reviews).permit(:comment, :rating)
+    params.require(:review).permit(:comment, :rating)
   end
 end
