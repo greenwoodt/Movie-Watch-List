@@ -17,8 +17,8 @@
   <body class="body-class">
    <div class="topnav">
     <a class="active" href="#home">Home</a>
-    <%= link_to "My lists", lists_path%>
-    <%= link_to "New list", new_list_path%>
+    <%= link_to "My lists", lists_path, class: "topnav-right"%>
+    <%= link_to "New list", new_list_path, class: "topnav-right"%>
    </div>
     <%= yield %>
   </body>

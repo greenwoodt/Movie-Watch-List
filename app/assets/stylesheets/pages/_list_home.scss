@@ -1,13 +1,14 @@
 .upper-container {
 display: flex;
-margin: 20px 0px 0px 0px;
 align-items: center;
-flex-direction: column
-
+flex-direction: column;
+margin: auto 0px;
+padding: 0px;
+background-image: url("cinehomepage.jpg");
+object-fit: contain;
 };
 
 .lists-container {
-
 display: flex;
 margin: 20px 0px 0px 0px;
 align-items: center;
