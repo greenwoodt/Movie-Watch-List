@@ -14,13 +14,24 @@
   }
 
   /* Style the links inside the navigation bar */
-  .topnav a {
+  .active{
     float: left;
     color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: 'Alexandria', sans-serif;
+  }
+
+  .topnav-right {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Alexandria', sans-serif;
   }
 
   /* Change the color of links on hover */
