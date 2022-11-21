@@ -1,2 +1,7 @@
 // Import page-specific CSS files here.
 @import "home";
+
+// List pages
+@import "pages/list/_listindex.scss";
+@import "pages/list/_listform.scss";
+@import "pages/list/_listshow.scss";
