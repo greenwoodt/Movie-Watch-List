@@ -1,7 +1,15 @@
 .upper-container {
-margin-top: 200px
+display: flex;
+margin: 20px 0px 0px 0px;
+align-items: center;
+flex-direction: column
+
 };
 
 .lists-container {
 
-}
+display: flex;
+margin: 20px 0px 0px 0px;
+align-items: center;
+flex-direction: column
+};
