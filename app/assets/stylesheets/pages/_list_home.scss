@@ -1,10 +1,11 @@
+// Upper container of index page
 .upper-container {
 display: flex;
 align-items: center;
 flex-direction: column;
 background-image: url("cinehomepage.jpg");
 padding: 0px;
-padding: 200px;
+padding: 190px;
 max-width: 100%;
 max-height: 100%;
 background-position: center;
@@ -19,7 +20,59 @@ background-size: cover;
 
 .lists-container {
 display: flex;
-margin: 20px 0px 0px 0px;
-align-items: center;
-flex-direction: column;
+margin: 50px 50px 40px 50px;
+}
+
+// My lists title
+.lists-container h4 {
+  color: white;
+  font-weight: bold;
+  font-family: 'Alexandria', sans-serif;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+// Create a new list button
+.button-index {
+  display: flex;
+  align-items: flex-end;
+  padding: .75rem 1.25rem;
+  color: #fff;
+  position: relative;
+  // overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Alexandria', sans-serif;
+  margin: 0px 0px 0px auto;
+  margin-right: 30px;
+  box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #282A3A;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(#282A3A, 15%);
+    transition: all .3s;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    &:before {
+      width: 100%;
+    }
+  }
 }
