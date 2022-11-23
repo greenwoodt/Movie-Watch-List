@@ -1,0 +1,18 @@
+.container-new-form {
+display: flex;
+margin: 80px 0px 0px 0px;
+justify-content: center;
+flex-direction: column;
+}
+
+.new-form-title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'Alexandria', sans-serif;
+  margin-bottom: 60px;
+}
+
+.form-new {
+  max-width: 400px;
+}
