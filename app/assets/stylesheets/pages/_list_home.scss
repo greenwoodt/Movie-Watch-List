@@ -30,6 +30,7 @@ margin: 50px 50px 40px 50px;
   font-family: 'Alexandria', sans-serif;
   align-items: flex-start;
   padding-left: 30px;
+  max-width: 700px;
 }
 
 // Create a new list button
@@ -39,7 +40,6 @@ margin: 50px 50px 40px 50px;
   padding: .75rem 1.25rem;
   color: #fff;
   position: relative;
-  // overflow: hidden;
   z-index: 1;
   text-decoration: none;
   font-weight: bold;
@@ -75,4 +75,11 @@ margin: 50px 50px 40px 50px;
       width: 100%;
     }
   }
+}
+
+.card-index {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 35px;
+margin: 0px 75px 0px 75px;
 }

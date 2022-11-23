@@ -61,7 +61,6 @@ background-color: #C69749
 
 
 //Card Components
-
 .card-category {
   background-size: cover;
   background-position: center;
@@ -73,7 +72,22 @@ background-color: #C69749
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75)
+}
+
+.card-category a {
+  color: white;
+  text-decoration: none;
+  background-color: #000;
+  font-family: 'Alexandria', sans-serif;
+  padding: 0px 9px;
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.3s;
+}
+
+.card-category a:hover {
+  background-color: #ffffff;
+  color: black;
 }
 
 .card-large {
