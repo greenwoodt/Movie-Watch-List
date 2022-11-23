@@ -54,7 +54,7 @@
 // --- NAV BAR CSS END ---
 
 
-  // Style for the body of the site
+// Style for the body of the site
 .body-class {
 background-color: #C69749
 };
@@ -94,3 +94,23 @@ background-color: #C69749
   height: 50vh;
   max-height: 400px;
 }
+
+
+// FOOTER CSS
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #735F32;
+    text-align: center;
+    font-family: 'Alexandria', sans-serif;
+    font-style: italic;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: white;
+    margin: 13px;
+    display: block;
+  }

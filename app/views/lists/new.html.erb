@@ -1,5 +1,10 @@
-<%= simple_form_for(@list) do |f| %>
-  <%= f.input :name, placeholder: 'For example Action or Thriller' %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
-<% end %>
+<div class="container-new-form">
+  <h1 class="new-form-title">Lets create your new movie list!</h1>
+  <div class="form-new">
+      <%= simple_form_for(@list) do |f| %>
+        <%= f.input :name, placeholder: 'For example Action or Thriller' %>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit %>
+      <% end %>
+  </div>
+</div>
