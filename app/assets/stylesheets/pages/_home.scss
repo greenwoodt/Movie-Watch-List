@@ -37,6 +37,7 @@
     font-size: 17px;
     font-family: 'Alexandria', sans-serif;
     transition: 0.3s;
+    margin-right: 15px;
   }
 
   /* Change the color of links on hover */
@@ -56,7 +57,10 @@
 
 // Style for the body of the site
 .body-class {
-background-color: #C69749
+background-color: #C69749;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
 };
 
 
@@ -98,10 +102,7 @@ background-color: #C69749
 
 // FOOTER CSS
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto;
     background-color: #735F32;
     text-align: center;
     font-family: 'Alexandria', sans-serif;
