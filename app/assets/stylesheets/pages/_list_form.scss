@@ -22,3 +22,10 @@ flex-direction: column;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.page-split {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  margin-top: 42px;
+}
