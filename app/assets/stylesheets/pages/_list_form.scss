@@ -1,6 +1,6 @@
 .container-new-form {
 display: flex;
-margin: 80px 0px 0px 0px;
+margin: -42px 0px 0px 0px;
 justify-content: center;
 flex-direction: column;
 }
@@ -10,22 +10,51 @@ flex-direction: column;
   justify-content: center;
   font-weight: bold;
   font-family: 'Alexandria', sans-serif;
-  margin-bottom: 60px;
+  margin: 230px 40px auto;
+  text-align: center;
+  text-shadow: 2px 2px #C69749;
+
 }
 
 .form-new {
   max-width: 400px;
 }
 
-.column-form {
+.page-split {
   display: flex;
   flex-direction: row;
+  margin-top: 42px;
+  height: 720px;
   justify-content: space-between;
 }
 
-.page-split {
+.column-form-left {
   display: flex;
-  position: fixed;
-  flex-direction: row;
-  margin-top: 42px;
+  background-image: url(https://images.unsplash.com/photo-1585647347129-7aebb8689a78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
+  max-width: 700px;
+}
+
+.column-form-right {
+  display: flex;
+  margin: 0px 220px 50px 50px;
+  align-items: center;
+}
+
+.name-form {
+  font-family: 'Alexandria', sans-serif;
+  text-align: center;
+  border: 1px solid #040404;
+  border-radius: 5px;
+}
+
+.photo-form {
+  font-family: 'Alexandria', sans-serif;
+  text-align: center;
+  border: 1px solid #040404;
+  border-radius: 5px;
+}
+
+.form-label {
+  font-weight: bold;
+  font-family: 'Alexandria', sans-serif;
 }

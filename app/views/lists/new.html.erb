@@ -1,13 +1,13 @@
 <div class="container-new-form">
   <div class="page-split">
-    <div class="column-form" style="background-image: url(https://images.unsplash.com/photo-1585647347129-7aebb8689a78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80)">
-      <h1 class="new-form-title">Lets create your new movie list!</h1>
+    <div class="column-form-left">
+      <h1 class="new-form-title">Lets create your ultimate, new and amazing movie list!</h1>
     </div>
-      <div class="column-form">
+      <div class="column-form-right">
         <div class="form-new">
             <%= simple_form_for(@list) do |f| %>
-              <%= f.input :name, placeholder: 'For ex. "Action" or "Thriller"' %>
-              <%= f.input :photo, as: :file %>
+              <%= f.input :name, placeholder: 'For ex. "Action" or "Thriller"', input_html: {class: "name-form"} %>
+              <%= f.input :photo, as: :file, input_html: {class: "photo-form"} %>
               <%= f.submit %>
             <% end %>
         </div>
