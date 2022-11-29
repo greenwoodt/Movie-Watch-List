@@ -10,10 +10,9 @@ flex-direction: column;
   justify-content: center;
   font-weight: bold;
   font-family: 'Alexandria', sans-serif;
-  margin: 230px 40px auto;
+  margin: 295px 40px auto;
   text-align: center;
   text-shadow: 2px 2px #C69749;
-
 }
 
 .form-new {
@@ -24,7 +23,7 @@ flex-direction: column;
   display: flex;
   flex-direction: row;
   margin-top: 42px;
-  height: 720px;
+  height: 805px;
   justify-content: space-between;
 }
 
@@ -36,7 +35,7 @@ flex-direction: column;
 
 .column-form-right {
   display: flex;
-  margin: 0px 220px 50px 50px;
+  margin: 0px 280px 65px 50px;
   align-items: center;
 }
 
@@ -45,6 +44,8 @@ flex-direction: column;
   text-align: center;
   border: 1px solid #040404;
   border-radius: 5px;
+  width: 435px;
+  margin-bottom: 20px;
 }
 
 .photo-form {
@@ -52,9 +53,16 @@ flex-direction: column;
   text-align: center;
   border: 1px solid #040404;
   border-radius: 5px;
+  width: 305px;
+  margin-bottom: 20px;
 }
 
 .form-label {
   font-weight: bold;
   font-family: 'Alexandria', sans-serif;
+}
+
+
+.btn {
+  border-radius: 5px;
 }
