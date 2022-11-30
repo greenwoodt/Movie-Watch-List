@@ -1,7 +1,7 @@
 .container-list-show {
 display: flex;
 align-items: center;
-margin: auto 0;
+margin: 360px;
 height: 1px 0px 1px 0px;
 width: 1px 0px 1px 0px;
 flex-direction: column;
@@ -10,7 +10,6 @@ flex-direction: column;
 .header-list-title {
   display: flex;
   margin: auto 0;
-
 }
 
 .bookmarks-title-show {
@@ -19,4 +18,12 @@ display: flex;
 
 .bookmark-list-card {
 display: flex;
+}
+
+.card-category {
+
+}
+
+.card-large {
+
 }
