@@ -11,7 +11,10 @@
 @import "components/index";
 @import "pages/index";
 
-// Pages
+// list Pages
 @import "pages/list_show";
 @import "pages/list_form";
 @import "pages/list_home";
+
+// Bookmark Pages
+@import "pages/bookmarks_new";

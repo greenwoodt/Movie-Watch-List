@@ -1,0 +1,16 @@
+.bookmark-form-container {
+display: flex;
+flex-direction: column;
+}
+
+.bookmark-form-container h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'Alexandria', sans-serif;
+}
+
+.bookmark-form {
+display: flex;
+flex-direction: column;
+}
