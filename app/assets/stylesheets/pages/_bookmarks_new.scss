@@ -1,16 +1,43 @@
 .bookmark-form-container {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  margin-bottom: 50px;
+  box-shadow:0px 1px 1px #000000;
+  background-image: url(https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
 }
 
 .bookmark-form-container h1 {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  font-family: 'Alexandria', sans-serif;
+display: flex;
+justify-content: center;
+margin: 100px 30px 70px 0px;
+font-weight: bold;
+font-family: 'Alexandria', sans-serif;
+color: #ffffff;
+text-shadow: 2px 2px #74582b;
 }
 
 .bookmark-form {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-left: 462px;
+  justify-content: center;
+}
+
+
+#bookmark_comment {
+  font-family: 'Alexandria', sans-serif;
+  border: 1px solid #040404;
+  border-radius: 5px;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+ #bookmark_movie_id {
+  font-family: 'Alexandria', sans-serif;
+  text-align: center;
+  border: 1px solid #040404;
+  border-radius: 5px;
+  width: 500px;
+  margin-bottom: 20px;
 }

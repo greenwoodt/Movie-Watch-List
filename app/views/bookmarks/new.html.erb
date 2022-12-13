@@ -1,10 +1,10 @@
 <div class="bookmark-form-container">
-  <h1>Create your list</h1>
-    <div class="bookmark-form">
-      <%= simple_form_for([@list, @bookmark]) do |f| %>
-        <%= f.input :comment %>
-        <%= f.association :movie %>
-        <%= f.submit  %>
-      <% end %>
-    </div>
+  <h1>Lets create your list!</h1>
+</div>
+<div class="bookmark-form">
+    <%= simple_form_for([@list, @bookmark]) do |f| %>
+    <%= f.input :comment, placeholder: "Add a short summary.." %>
+    <%= f.association :movie, placeholder: "Movie" %>
+    <%= f.button :submit, class: "btn btn-dark" %>
+  <% end %>
 </div>
