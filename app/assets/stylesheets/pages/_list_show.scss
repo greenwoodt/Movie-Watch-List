@@ -1,3 +1,23 @@
+.list-show-header {
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  margin-bottom: 50px;
+  box-shadow:0px 1px 1px #000000;
+}
+
+.list-show-header h1 {
+display: flex;
+justify-content: center;
+margin: 100px 30px 70px 0px;
+font-weight: bold;
+font-family: 'Alexandria', sans-serif;
+color: #ffffff;
+text-shadow: 2px 2px #74582b;
+background-color: #000000;
+border-radius: 5px;
+}
+
 .container-list-show {
 display: flex;
 align-items: center;
@@ -21,9 +41,25 @@ display: flex;
 }
 
 .card-category-1 {
+
 }
 
 .card-large-1 {
   display: flex;
   max-height: 80vh;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px 0px 0px 0px;
+}
+
+.review-list {
+display: flex;
+}
+
+.create-review {
+display: flex;
 }
