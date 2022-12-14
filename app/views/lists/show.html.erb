@@ -1,6 +1,7 @@
-<div class="header-list-title">
-<div class="card-category-1 card-large-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @list.photo.attached? ? cl_image_path(@list.photo.key) : asset_path('list_background.jpg') %>)">
-  <h1><%= @list.name %></h1>
+<div class="list-show-header">
+  <div style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @list.photo.attached? ? cl_image_path(@list.photo.key) : asset_path('list_background.jpg') %>)">
+    <h1><%= @list.name %></h1>
+  </div>
 </div>
 
 <div class="container-list-show">
@@ -30,7 +31,8 @@
           <%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-danger' %>
     <% end %>
 <br>
- <div class="col-12 col-sm-6">
+<div class="review-container">
+ <div class="review-list">
       <h3>Reviews</h3>
       <br>
       <% if @list.reviews.empty? %>
@@ -48,7 +50,7 @@
       <% end %>
     </div>
     <br>
-    <div class="col-12 col-sm-6">
+    <div class="create-review">
       <div class="bg-white rounded p-3">
         <h5>Add your review</h5>
         <%= simple_form_for [@list, @review] do |f| %>
@@ -59,5 +61,6 @@
       </div>
     </div>
   </div>
+</div>
   <%# <%= render "bookmarks/modal", list: @list, bookmark: @bookmark %>
 </div>
