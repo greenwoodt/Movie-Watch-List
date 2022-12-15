@@ -1,7 +1,7 @@
 .list-show-header {
   display: flex;
   flex-direction: column;
-  height: 280px;
+  height: 307px;
   margin-bottom: 50px;
   box-shadow:0px 1px 1px #000000;
 }
@@ -9,7 +9,7 @@
 .list-show-header h1 {
 display: flex;
 justify-content: center;
-margin: 100px 30px 70px 0px;
+margin: 190px 30px 70px 0px;
 font-weight: bold;
 font-family: 'Alexandria', sans-serif;
 color: #ffffff;
@@ -21,9 +21,7 @@ border-radius: 5px;
 .container-list-show {
 display: flex;
 align-items: center;
-margin: 360px;
-height: 1px 0px 1px 0px;
-width: 1px 0px 1px 0px;
+margin: 5px;
 flex-direction: column;
 }
 
@@ -34,6 +32,11 @@ flex-direction: column;
 
 .bookmarks-title-show {
 display: flex;
+}
+
+.bookmarks-title-show h2 {
+  font-weight: bold;
+font-family: 'Alexandria', sans-serif;
 }
 
 .bookmark-list-card {
