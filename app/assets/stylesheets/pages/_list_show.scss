@@ -19,16 +19,16 @@
 }
 
 .list-show-header h1 {
-display: flex;
-justify-content: center;
-margin: 120px 30px 70px 30px;
-padding: 10px;
-font-weight: bold;
-font-family: 'Alexandria', sans-serif;
-color: #ffffff;
-text-shadow: 2px 2px #74582b;
-background-color: #000000;
-border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 120px 30px 70px 30px;
+  padding: 10px;
+  font-weight: bold;
+  font-family: 'Alexandria', sans-serif;
+  color: #ffffff;
+  text-shadow: 2px 2px #74582b;
+  background-color: #000000;
+  border-radius: 5px;
 }
 
 .header-list-title {
@@ -39,21 +39,21 @@ border-radius: 5px;
 // list show title and new bookmark button
 
 .bookmarks-title-show {
-display: flex;
-margin: 60px 50px 0px 50px;
-flex-direction: row;
-justify-content: space-between;
+  display: flex;
+  margin: 60px 50px 0px 50px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .bookmarks-title-show h4 {
-display: flex;
-font-weight: bold;
-color: #ffffff;
-font-family: 'Alexandria', sans-serif;
+  display: flex;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Alexandria', sans-serif;
 }
 
 .bookmarks-title-show a {
-display: flex;
+  display: flex;
   align-items: flex-end;
   padding: .75rem 1.25rem;
   color: #fff;
@@ -95,16 +95,12 @@ display: flex;
   }
 }
 
-// movie list cards
+// Movie list cards
 
 .container-list-show {
-  // display: flex;
-  // align-items: center;
-  // margin: 70px;
-  // flex-direction: column;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 80px;
   margin: 0px 75px 150px 75px;
 }
 
@@ -115,9 +111,16 @@ display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   color: white;
   margin: 125px;
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  height: fit-content;
+}
+
+.list-show-card-title {
+  margin-top: 15px ;
 }
 
 .card-large-1 {
