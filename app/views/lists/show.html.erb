@@ -13,26 +13,20 @@
 
   <div class="container-list-show">
     <div class="list-show-card">
-      <ul>
-        <% @list.bookmarks.each do |bookmark| %>
-          <li>
-            <%= bookmark.movie.title %> - <%= bookmark.comment %>
-            <%= link_to bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }  do %>
-              <i class="fa-solid fa-trash"></i>
-            <% end %>
-          </li>
-        <% end %>
-      </ul>
-
       <% @list.movies.each do |movie| %>
           <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
               <%= image_tag movie.poster_url, alt: movie.title%>
-              <%= movie.title %> <%= movie.rating %>
+              <%= movie.title %> <%=" · "%> <%= movie.rating %>
               <%= movie.overview %>
               <%= bookmark.comment %></small>
               <%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'text-danger' %>
         <% end %>
-        <br>
+         <% @list.bookmarks.each do |bookmark| %>
+           <div class="list-show-card-title"> <%= bookmark.movie.title %> - <%= bookmark.comment %></div>
+            <%# <%= link_to bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }  do %>
+              <%# <i class="fa-solid fa-trash"></i> %>
+            <%# <% end %>
+        <% end %>
     </div>
   </div>
 

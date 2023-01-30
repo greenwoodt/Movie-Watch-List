@@ -8,12 +8,9 @@ puts "The database is now cleaned!"
 url = "https://tmdb.lewagon.com/movie/top_rated"
 
 1.times do |x|
-
   puts "Importing movies from page #{x + 1}"
-
-user_serialized = URI.open("#{url}?page=#{x + 1}").read
-
-JSON.parse(user_serialized)["results"].each do |movie|
+  user_serialized = URI.open("#{url}?page=#{x + 1}").read
+  JSON.parse(user_serialized)["results"].each do |movie|
 
   puts "Creating #{movie['title']}"
 
