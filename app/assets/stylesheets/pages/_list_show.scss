@@ -101,22 +101,29 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 80px;
-  margin: 0px 75px 150px 75px;
+  margin: -40px 75px 150px 75px;
 }
 
 .list-show-card {
   background-size: cover;
   background-position: center;
+  background-color: #ffffff;
   height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
-  margin: 125px;
+  color: #000000;
+  margin: 90px;
   box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
   height: fit-content;
+}
+
+.list-show-info-card {
+  display: flex;
+  justify-content: flex-start;
+  padding: 12px 12px 12px 12px;
 }
 
 .list-show-card-title {
