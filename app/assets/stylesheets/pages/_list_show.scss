@@ -122,6 +122,7 @@
 
 .list-show-info-card {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   padding: 12px 12px 12px 12px;
 }
