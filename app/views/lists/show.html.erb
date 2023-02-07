@@ -21,10 +21,14 @@
                   <%= movie.overview %>
                   <%= bookmark.comment %></small>
                 </div>
-              <%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'btn btn-danger' %>
-        <% end %>
+            <div class="lower-card-list-show">
+          <%= link_to "Delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'btn btn-danger' %>
+           <% end %>
          <% @list.bookmarks.each do |bookmark| %>
-           <div class="list-show-card-title"> <%= bookmark.movie.title %> - <%= bookmark.comment %></div>
+           <div class="list-show-card-title">
+           <%= bookmark.movie.title %> - <%= bookmark.comment %>
+            </div>
+           </div>
             <%# <%= link_to bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }  do %>
               <%# <i class="fa-solid fa-trash"></i> %>
             <%# <% end %>
