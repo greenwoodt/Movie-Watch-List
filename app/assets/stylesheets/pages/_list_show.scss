@@ -37,7 +37,6 @@
 }
 
 // list show title and new bookmark button
-
 .bookmarks-title-show {
   display: flex;
   margin: 60px 50px 0px 50px;
@@ -96,7 +95,6 @@
 }
 
 // Movie list cards
-
 .container-list-show {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -125,6 +123,12 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 12px 12px 12px 12px;
+}
+
+.lower-card-list-show {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .list-show-card-title {
