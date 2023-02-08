@@ -127,11 +127,13 @@
 
 .lower-card-list-show {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
+  margin: 16px 113px 0px 59px;
 }
 
 .list-show-card-title {
+  display: flex;
   margin-top: 15px ;
 }
 
