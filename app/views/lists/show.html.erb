@@ -22,7 +22,7 @@
                   <%= bookmark.comment %></small>
                 </div>
             <div class="lower-card-list-show">
-          <%= link_to "Delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'btn btn-danger' %>
+          <%= link_to "Delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'btn-lower-list' %>
            <% end %>
          <% @list.bookmarks.each do |bookmark| %>
            <div class="list-show-card-title">
