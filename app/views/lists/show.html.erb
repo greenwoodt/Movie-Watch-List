@@ -20,7 +20,7 @@
                 <div class="list-show-star">
                   <%= movie.title %> <%=" · "%> <%= movie.rating %> <%= image_tag ('star_icon.png'), style: 'height:1vw;width:1vw;margin-left:7px;margin-top:2px' %>
                 </div>
-                  <%= movie.overview %>
+                  <%= movie.overview%>
                   <%= bookmark.comment %></small>
                 </div>
             <div class="lower-card-list-show">
@@ -37,7 +37,7 @@
         <% end %>
     </div>
   </div>
-
+<div style="width:1000px;height:1px;margin:auto;padding:40px;border-bottom:1px solid black ;"></div>
   <div class="review-container">
     <div class="review-list">
         <h3>Reviews</h3>
@@ -63,7 +63,7 @@
           <%= simple_form_for [@list, @review] do |f| %>
             <%= f.input :comment, placeholder: "Add your review here..." %>
             <%= f.input :rating, as: :select, collection: (1..5), required: true, prompt: "What's your rating", input_html: { data: { controller: "star-rating" } } %>
-            <%= f.submit class:"btn btn-flat" %>
+            <%= f.submit class: "btn btn-flat btn-info" %>
           <% end %>
         </div>
       </div>
