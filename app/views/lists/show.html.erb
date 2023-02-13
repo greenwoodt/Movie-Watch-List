@@ -8,6 +8,7 @@
     <h4>Your bookmarks</h4>
     <%= link_to "Add a movie", new_list_bookmark_path(@list) %>
 </div>
+
   <div class="container-list-show">
     <div class="list-show-card">
       <% @list.movies.each do |movie| %>

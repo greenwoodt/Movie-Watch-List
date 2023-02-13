@@ -97,8 +97,8 @@
 // Movie list cards
 .container-list-show {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 80px;
+  grid-template-rows: auto auto;
+  row-gap: 180px;
   margin: -40px 75px 150px 75px;
 }
 
