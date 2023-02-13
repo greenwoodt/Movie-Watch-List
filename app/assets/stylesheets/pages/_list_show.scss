@@ -118,18 +118,27 @@
   height: fit-content;
 }
 
+.list-show-star {
+display: flex;
+flex-direction: row;
+margin-bottom: 5px;
+font-weight: bold;
+font-size: medium;
+}
+
 .list-show-info-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-family: 'Alexandria', sans-serif;
   padding: 12px 12px 12px 12px;
+
 }
 
 .lower-card-list-show {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  margin: 16px -101px 10px 59px;
+  font-family: 'Alexandria', sans-serif;
 }
 
 .btn-lower-list {
@@ -138,12 +147,14 @@
   text-decoration: none;
   background-color: #e60c0c;
   font-family: 'Alexandria', sans-serif;
-  padding: 2px 11px;
-  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  padding: 2px 10px;
+  box-shadow: 11px 12px 19px 0px rgba(0, 0, 0, 0.40);
   transition: 0.3s;
   border-radius: 3px;
-  margin: 5px 5px 5px 6px;
+  margin: 5px 5px 15px 12px;
+  padding-top: 5px;
 }
+
 
 .btn-lower-list:hover {
   display: flex;
@@ -153,7 +164,9 @@
 
 .list-show-card-title {
   display: flex;
-  margin-top: 15px ;
+  margin-top: 10px;
+  margin-right: 150px;
+  margin-bottom: 20px;
 }
 
 .card-large-1 {

@@ -16,8 +16,10 @@
       <% @list.movies.each do |movie| %>
           <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
               <%= image_tag movie.poster_url, alt: movie.title%>
-                <div class ="list-show-info-card">
-                  <%= movie.title %> <%=" · "%> <%= movie.rating %> <%= image_tag ('star_icon.png'), style: 'height:1vw;width:1vw;' %>
+                <div class="list-show-info-card">
+                <div class="list-show-star">
+                  <%= movie.title %> <%=" · "%> <%= movie.rating %> <%= image_tag ('star_icon.png'), style: 'height:1vw;width:1vw;margin-left:7px;margin-top:2px' %>
+                </div>
                   <%= movie.overview %>
                   <%= bookmark.comment %></small>
                 </div>
