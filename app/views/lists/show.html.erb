@@ -1,39 +1,31 @@
-<div class="list-show-header">
-  <div class= "list-pic-header" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @list.photo.attached? ? cl_image_path(@list.photo.key) : asset_path('list_background.jpg') %>)">
-    <h1><%= @list.name %></h1>
-  </div>
-</div>
-
- <div class="bookmarks-title-show">
-    <h4>Your bookmarks</h4>
-    <%= link_to "Add a movie", new_list_bookmark_path(@list) %>
-</div>
-
-  <div class="container-list-show">
-    <div class="list-show-card">
-      <% @list.movies.each do |movie| %>
-          <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
-              <%= image_tag movie.poster_url, alt: movie.title%>
-                <div class="list-show-info-card">
-                <div class="list-show-star">
-                  <%= movie.title %> <%=" · "%> <%= movie.rating %> <%= image_tag ('star_icon.png'), style: 'height:1vw;width:1vw;margin-left:7px;margin-top:2px' %>
-                </div>
-                  <%= movie.overview%>
-                  <%= bookmark.comment %></small>
-                </div>
-            <div class="lower-card-list-show">
-          <%= link_to "Delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'btn-lower-list' %>
-           <% end %>
-         <% @list.bookmarks.each do |bookmark| %>
-           <div class="list-show-card-title">
-           <%= bookmark.movie.title %> - <%= bookmark.comment %>
-            </div>
-           </div>
-            <%# <%= link_to bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }  do %>
-              <%# <i class="fa-solid fa-trash"></i> %>
-            <%# <% end %>
-        <% end %>
+  <div class="list-show-header">
+    <div class= "list-pic-header" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @list.photo.attached? ? cl_image_path(@list.photo.key) : asset_path('list_background.jpg') %>)">
+      <h1><%= @list.name %></h1>
     </div>
+  </div>
+ <div class="bookmarks-title-show">
+  <h4>Your bookmarks</h4>
+   <%= link_to "Add a movie", new_list_bookmark_path(@list) %>
+</div>
+<div class="container-list-show">
+    <% @list.movies.each do |movie| %>
+      <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
+      <div class="col-12 col-sm-6 mb-4" data-aos="zoom-in">
+        <div class="bg-white rounded shadow h-100">
+          <%= image_tag movie.poster_url, alt: movie.title, class: "movie-img rounded-top" %>
+          <div class="p-3 rounded-bottom d-flex flex-column">
+            <strong><%= movie.title %> <span class="text-muted font-weight-normal">• <%= movie.rating %> <%= image_tag ('star_icon.png'), style: 'height:1vw;width:1vw;margin-left:7px;margin-bottom:3px' %></span></strong>
+            <small class="text-muted mt-1"><%= movie.overview %></small>
+            <div class="d-flex align-items-end justify-content-between pt-2">
+              <div>
+                <i class="fas fa-quote-left me-2"></i><small class="flex-grow-1"><%= bookmark.comment %></small>
+              </div>
+              <small class="text-right flex-shrink-0"><%= link_to "delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list"}, class: 'btn btn-danger' %></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 <div style="width:1000px;height:1px;margin:auto;padding:40px;border-bottom:1px solid black ;"></div>
   <div class="review-container">
@@ -43,12 +35,12 @@
         <% if @list.reviews.empty? %>
           <small><em class="text-muted">Be the first one to review this list</em></small>
         <% end %>
-        <% @list.reviews.each do |review| %>
+         <% @list.reviews.each do |review| %>
           <div>
             <% review.rating.times do %>
               <i class="fas fa-star star-yellow"></i>
-            <% end %>
-            <small><em class="text-muted"><%= distance_of_time_in_words_to_now(review.created_at) %> ago</em></small>
+              <% end %>
+                <small><em class="text-muted"><%= distance_of_time_in_words_to_now(review.created_at) %> ago</em></small>
             <p class="mb-0"><%= review.comment %></p>
           </div>
           <hr>
