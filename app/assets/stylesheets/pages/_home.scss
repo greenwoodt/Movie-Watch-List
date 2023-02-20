@@ -17,7 +17,7 @@
   }
 
   // Style the links inside the navigation bar
-  .active{
+  .active {
     float: left;
     color: #ffffff;
     text-align: center;
@@ -37,29 +37,41 @@
     font-family: 'Alexandria', sans-serif;
     transition: 0.3s;
     margin-right: 15px;
+
+    &:hover {
+        background-color: #ffffff;
+        color: black;
+      }
   }
 
-  // Change the color of links on hover
-  .topnav a:hover {
-    background-color: #ffffff;
-    color: black;
-  }
-
-  // Add a color to the active/current link
-  .topnav a.active {
+  .top-left {
+    float: left;
     background-color: #735F32;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Alexandria', sans-serif;
+    margin-right: 15px;
+
+      &:hover {
+        background-color: #735F32;
+        color: white;
+      }
   }
+
+
 
 // --- NAV BAR CSS END ---
 
 
 // Style for the body of the site
 .body-class {
-background-color: #C69749;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
+  background-color: #C69749;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 };
 
 
