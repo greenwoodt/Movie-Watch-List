@@ -75,3 +75,5 @@ gem "sassc-rails"
 # gem for uploading photo files to cloudary.
 gem "cloudinary"
 gem "dotenv-rails", groups: [:development, :test]
+
+gem "dockerfile-rails", ">= 1.2", :group => :development
