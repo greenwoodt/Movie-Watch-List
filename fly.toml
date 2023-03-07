@@ -1,6 +1,6 @@
-# fly.toml file generated for movie-watch-list on 2023-02-20T14:22:11+01:00
+# fly.toml file generated for movie-list-app on 2023-03-02T16:49:52+01:00
 
-app = "movie-watch-list"
+app = "movie-list-app"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
