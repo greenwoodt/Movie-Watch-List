@@ -1,6 +1,6 @@
-# fly.toml file generated for movie-list-app on 2023-03-02T16:49:52+01:00
+# fly.toml file generated for movielistapp on 2023-03-08T12:25:44+01:00
 
-app = "movie-list-app"
+app = "movielistapp"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -21,7 +21,7 @@ processes = []
 
 [[services]]
   http_checks = []
-  internal_port = 8080
+  internal_port = 3000
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
