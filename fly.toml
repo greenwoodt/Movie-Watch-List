@@ -1,6 +1,6 @@
-# fly.toml file generated for movielistapp on 2023-03-08T12:40:15+01:00
+# fly.toml file generated for movie-watch-list on 2023-03-07T13:11:38+01:00
 
-app = "movielistapp"
+app = "movie-watch-list"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -14,14 +14,14 @@ processes = []
   release_command = "bin/rails fly:release"
 
 [env]
-  PORT = "0.0.0.0:8080"
+  PORT = "80"
 
 [experimental]
   auto_rollback = true
 
 [[services]]
   http_checks = []
-  internal_port = 3000
+  internal_port = 8080
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
