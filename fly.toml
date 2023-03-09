@@ -1,6 +1,6 @@
-# fly.toml file generated for movie-list-app on 2023-03-09T11:30:58+01:00
+# fly.toml file generated for movie-list-planner on 2023-03-09T13:04:00+01:00
 
-app = "movie-list-app"
+app = "movie-list-planner"
 kill_signal = "SIGINT"
 kill_timeout = 5
 primary_region = "mad"
