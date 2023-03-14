@@ -21,6 +21,20 @@ namespace :fly do
     sh 'bin/rails server'
   end
 
+  task :disable_database_environment_check do
+    ENV['DISABLE_DATABASE_ENVIRONMENT_CHECK'] = '1'
+  end
+
+  task :setmigrate => 'db:migrate VERSION1'
+
+
+  task :reset => [
+    'fly:disable_database_environment_check',
+    'db:migrate:reset',
+    'db:migrate',
+    'db:seed'
+  ]
+
   # optional SWAPFILE task:
   #  - adjust fallocate size as needed
   #  - performance critical applications should scale memory to the
