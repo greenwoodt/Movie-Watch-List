@@ -12,3 +12,5 @@ Built using:
 - Rails 7 
 - SCSS 
 - HTML
+- DOCKER
+- JavaScript
